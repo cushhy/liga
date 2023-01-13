@@ -385,17 +385,30 @@ p {
   margin-right: 1.25em;
   transition: all 0.2s ease;
 }
+.intro__button .activ {
+  color: #010100;
+  border: 2px solid #010100;
+}
+.intro__button .disable {
+  color: #D0D5DD;
+  border: 2px solid #D0D5DD;
+}
+.intro__button .disable svg {
+  fill: #D0D5DD;
+}
 .intro__button:hover {
-  background-color: #323232;
-  border: 2px solid #323232;
+  transition: all 0.2s ease;
+  opacity: 0.5;
+  border-color: #323232;
 }
 .intro__button:hover svg {
-  fill: #fff;
+  fill: #010100;
+  opacity: 0.5;
   transition: all 0.2s ease;
 }
 .intro__button:hover h4 {
-  color: #fff;
   transition: all 0.2s ease;
+  opacity: 0.5;
 }
 .intro__button.dark-btn {
   margin-right: 2.5em;
@@ -403,21 +416,31 @@ p {
   border: 2px solid #323232;
 }
 .intro__button.dark-btn h4 {
+  opacity: 1;
   color: #fff;
   transition: all 0.2s ease;
 }
 .intro__button.dark-btn svg {
   fill: #fff;
+  opacity: 1;
 }
 .intro__button.dark-btn:hover {
-  background-color: inherit;
-  border: 2px solid #010100;
+  background-color: #4B4B4B;
+  border: 2px solid #4B4B4B;
 }
 .intro__button.dark-btn:hover h4 {
-  color: #323232;
+  color: #fff;
 }
 .intro__button.dark-btn:hover svg {
-  fill: #323232;
+  fill: #fff;
+}
+.intro__button.dark-btn .activ {
+  background-color: #191919;
+  border: 2px solid #191919;
+}
+.intro__button.dark-btn .disable {
+  background-color: #C8C8C8;
+  border: 2px solid #C8C8C8;
 }
 @media (max-width: 73.75em) {
   .intro__button.dark-btn {
