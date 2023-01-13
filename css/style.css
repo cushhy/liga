@@ -747,17 +747,18 @@ p {
   }
 }
 
-.image__slider {
+.documents__slide {
   text-align: center;
 }
-.image__slider img {
+.documents__slide img {
   max-width: 100%;
+  max-height: 272px;
   margin: 0 auto;
   border: 0.5px solid #010100;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.image__slider:hover img {
+.documents__slide:hover img {
   filter: brightness(80%);
 }
 
@@ -979,9 +980,6 @@ p {
   margin-right: 0.625em;
   transition: all 0.2s ease;
 }
-.social__item:hover {
-  transform: translateY(-20%);
-}
 .social__item:last-child {
   margin-right: 0;
 }
@@ -1012,6 +1010,7 @@ footer {
 
 .geography__button {
   display: flex;
+  justify-content: center;
   max-width: 358px;
   align-items: center;
   padding: 1em 2em;
@@ -1026,16 +1025,29 @@ footer {
   transition: all 0.2s ease;
 }
 .geography__button:hover {
-  background-color: #323232;
-  border: 2px solid #323232;
+  transition: all 0.2s ease;
+  border-color: #323232;
+  opacity: 0.5;
 }
 .geography__button:hover svg {
-  fill: #fff;
+  fill: #010100;
+  opacity: 0.5;
   transition: all 0.2s ease;
 }
-.geography__button:hover div {
-  color: #fff;
+.geography__button:hover h4 {
   transition: all 0.2s ease;
+  opacity: 0.5;
+}
+.geography__button .activ {
+  color: #010100;
+  border: 2px solid #010100;
+}
+.geography__button .disable {
+  color: #D0D5DD;
+  border: 2px solid #D0D5DD;
+}
+.geography__button .disable svg {
+  fill: #D0D5DD;
 }
 @media (max-width: 73.75em) {
   .geography__button {
