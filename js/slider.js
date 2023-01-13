@@ -17,9 +17,9 @@ const documents__slider = new Swiper('.documents__slider', {
             spaceBetween: 10
         },
         // when window width is >= 480px
-        480: {
-            slidesPerView: 1,
-            spaceBetween: 15
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 30
         },
         // when window width is >= 640px
         950: {
@@ -47,8 +47,12 @@ const team__slider = new Swiper('.team__slider ', {
             slidesPerView: 1,
             spaceBetween: 10
         },
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
         // when window width is >= 480px
-        950: {
+        800: {
             slidesPerView: 3,
             spaceBetween: 15
         },
@@ -78,10 +82,14 @@ const reviews__slider = new Swiper('.reviews__slider ', {
             slidesPerView: 1,
             spaceBetween: 20
         },
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
         // when window width is >= 480px
-        950: {
+        800: {
             slidesPerView: 3,
-            spaceBetween: 15
+            spaceBetween: 30
         },
         // when window width is >= 640px
         1180: {
@@ -108,8 +116,12 @@ const partners__slider = new Swiper('.partners__slider  ', {
             slidesPerView: 1,
             spaceBetween: 0
         },
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
         // when window width is >= 480px
-        950: {
+        800: {
             slidesPerView: 3,
             spaceBetween: 15
         },

@@ -28,6 +28,4 @@ $(document).ready(function () {
             $('.header__phone span').text('+7 999 100-80-00');
         }
     };
-
-    $('.lightzoom').lightzoom();
 });
