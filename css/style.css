@@ -247,17 +247,17 @@ p {
   border-radius: 50px;
   transition: all 0.3s ease;
 }
-.header__burger.active::before {
+.header__burger:hover::before {
   width: 30px;
   transform: rotate(-45deg);
   top: 6px;
 }
-.header__burger.active::after {
+.header__burger:hover::after {
   width: 30px;
   transform: rotate(45deg);
   bottom: 17px;
 }
-.header__burger.active span {
+.header__burger:hover a {
   transform: scale(0);
 }
 
@@ -565,6 +565,9 @@ p {
   padding: 2.5em 0;
 }
 
+.steps__title {
+  margin-left: 2.5em;
+}
 @media (max-width: 73.75em) {
   .steps__title {
     text-align: center;
