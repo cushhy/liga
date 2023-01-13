@@ -463,6 +463,17 @@ p {
     padding: 1em 1.25em;
   }
 }
+@media (max-width: 65.8125em) {
+  .intro__button {
+    max-width: 307px;
+    width: 100%;
+  }
+}
+@media (max-width: 25em) {
+  .intro__button {
+    padding: 1em 0.3125em;
+  }
+}
 
 .intro__detail {
   padding: 2.5em 0;
