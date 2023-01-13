@@ -1,4 +1,9 @@
 $(document).ready(function () {
+
+    $('.header__burger').on('click', function () {
+        location.href = "https://liga.group";
+    });
+
     if (YMaps.location.city != '') {
         var youCity = (YMaps.location.city);
         if (youCity === "Киров") {
@@ -25,8 +30,4 @@ $(document).ready(function () {
     };
 
     $('.lightzoom').lightzoom();
-
-    $('.header__burger').on('click', function () {
-        location.href = "https://liga.group";
-    });
 });
