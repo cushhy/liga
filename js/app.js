@@ -22,5 +22,9 @@ $(document).ready(function () {
         else {
             $('.header__phone span').text('+7 999 100-80-00');
         }
-    }
+    };
+
+    $('.header__burger').on('click', function () {
+        location.href = "https://liga.group";
+    });
 });

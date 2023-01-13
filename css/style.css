@@ -94,7 +94,7 @@ h3 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   line-height: 1.4;
   color: #000;
   font-family: F-Regular;
@@ -159,6 +159,10 @@ p {
 .header__logo a {
   display: flex;
   align-items: center;
+  transition: all 0.2s eas7;
+}
+.header__logo:hover a {
+  opacity: 0.5;
 }
 
 .logo__text-subtitle {
@@ -193,7 +197,7 @@ p {
   background-color: #000;
 }
 .header__phone:hover {
-  text-decoration: underline;
+  opacity: 0.5;
 }
 
 .header__geo {
@@ -225,20 +229,20 @@ p {
   transition: all 0.3s ease;
 }
 .header__burger::before {
-  top: 0;
+  top: 1px;
   left: 0;
 }
 .header__burger::after {
-  bottom: -2px;
+  bottom: 0;
   left: 0;
 }
-.header__burger span {
+.header__burger a {
   cursor: pointer;
   position: absolute;
   background-color: #000;
   left: 0;
   width: 30px;
-  height: 3px;
+  height: 2.5px;
   top: 50%;
   left: 0;
   border-radius: 50px;
@@ -647,10 +651,17 @@ p {
   margin-bottom: 1.25em;
 }
 .information__link img {
+  transition: all 0.2s ease;
   margin-right: 1.25em;
 }
-.information__link:hover {
-  text-decoration: underline;
+.information__link p {
+  transition: all 0.2s ease;
+}
+.information__link:hover p {
+  color: rgba(1, 1, 0, 0.5);
+}
+.information__link:hover img {
+  opacity: 0.5;
 }
 .information__link:last-child {
   margin-bottom: 0;
@@ -1016,12 +1027,12 @@ footer {
   width: 24px;
   height: 24px;
   font-size: 0;
-  background: url(../assets/img/right.png);
+  background: url(../assets/img/right.svg);
 }
 
 .swiper-button-prev {
   width: 24px;
   height: 24px;
   font-size: 0;
-  background: url(../assets/img/left.png);
+  background: url(../assets/img/left.svg);
 }
