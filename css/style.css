@@ -375,7 +375,7 @@ p {
   display: flex;
   align-items: center;
   padding: 1em 2em;
-  border: 2px solid #010100;
+  border: 2px solid #323232;
   border-radius: 10px;
   transition: all 0.2s ease;
 }
@@ -398,8 +398,8 @@ p {
 }
 .intro__button:hover {
   transition: all 0.2s ease;
-  opacity: 0.5;
   border-color: #323232;
+  opacity: 0.5;
 }
 .intro__button:hover svg {
   fill: #010100;
