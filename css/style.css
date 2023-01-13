@@ -380,8 +380,6 @@ p {
 }
 
 .intro__button {
-  max-width: 306px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -455,6 +453,8 @@ p {
 }
 @media (max-width: 65.8125em) {
   .intro__button.dark-btn {
+    max-width: 307px;
+    width: 100%;
     margin: 0 0 1.25em 0;
   }
 }
