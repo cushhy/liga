@@ -23,6 +23,7 @@
   font-style: normal;
 }
 body {
+  overflow-x: hidden;
   font-family: F-Regular;
   color: #010100;
 }
@@ -139,9 +140,6 @@ p {
   }
 }
 
-header {
-  padding: 1.625em 2.5em;
-}
 @media (max-width: 59.375em) {
   header {
     padding: 0.9375em 0;
@@ -151,7 +149,22 @@ header {
 .header__inner {
   display: flex;
   align-items: center;
+  padding: 1.625em 2.5em;
   justify-content: space-between;
+}
+
+.header__logo img {
+  margin-right: 1.25em;
+}
+.header__logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text-subtitle {
+  padding-top: 0.375em;
+  margin-top: 0.375em;
+  border-top: 0.5px solid #010100;
 }
 
 .header__right {
@@ -232,19 +245,55 @@ header {
   transition: all 0.3s ease;
 }
 .header__burger.active::before {
-  width: 17px;
+  width: 30px;
   transform: rotate(-45deg);
-  top: 17px;
-  left: 10px;
+  top: 6px;
 }
 .header__burger.active::after {
-  width: 17px;
+  width: 30px;
   transform: rotate(45deg);
   bottom: 17px;
-  left: 10px;
 }
 .header__burger.active span {
   transform: scale(0);
+}
+
+.header__menu {
+  padding-top: 6.25em;
+  padding-left: 0.625em;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 243px;
+  height: 100%;
+  z-index: 20;
+  overflow-y: auto;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.header__menu.active {
+  right: 0;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.nav-link {
+  margin: 0.9375em 0;
+  font-family: F-Bold;
+  font-size: 1.125rem;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.page.active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 18 !important;
+  background-color: rgba(34, 34, 34, 0.6);
 }
 
 .intro__inner {
@@ -905,7 +954,7 @@ header {
 }
 
 footer {
-  padding: 5em 0;
+  padding: 5em 0 12.5em 0;
 }
 
 .footer__geography {
