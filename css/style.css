@@ -931,7 +931,7 @@ p {
   margin-right: 0.625em;
 }
 .contacts__item:hover {
-  text-decoration: underline;
+  opacity: 0.5;
 }
 .contacts__item:last-child {
   margin-right: 0;
