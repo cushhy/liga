@@ -31,7 +31,7 @@ $(document).ready(function () {
             $(".header__phone").attr("href", "tel:+78314230414")
             $(".header__geo-city").text("Нижний Новгород")
         }
-        else if (youCity === "Ростов-На-Дону") {
+        else if (youCity === "Ростов-на-Дону") {
             $('.header__phone span').text('Ростов на дону');
             $(".header__phone").attr("href", "tel:+78314230414")
             $(".header__geo-city").text("Ростов")
