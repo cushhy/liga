@@ -1102,3 +1102,7 @@ footer {
 .team__slider .swiper-button-prev {
   left: 0;
 }
+
+.swiper-wrapper {
+  align-items: center;
+}
