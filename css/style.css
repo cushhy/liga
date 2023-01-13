@@ -712,6 +712,7 @@ p {
   display: flex;
   align-items: center;
   z-index: 1;
+  margin-right: 7.3125em;
 }
 .documents__title h2 {
   margin-left: -28px;
@@ -733,7 +734,7 @@ p {
 
 .documents__slider {
   padding: 2.5em 1.75em;
-  max-width: 500px;
+  max-width: 488px;
   height: 358px;
 }
 @media (max-width: 59.375em) {
@@ -870,6 +871,10 @@ p {
   .reviews__slider {
     padding: 0 1.25em;
   }
+}
+
+.reviews__slide {
+  filter: grayscale(100%);
 }
 
 .partners {
