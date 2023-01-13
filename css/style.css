@@ -153,16 +153,15 @@ p {
   justify-content: space-between;
 }
 
+.header__logo {
+  display: flex;
+}
 .header__logo img {
   margin-right: 1.25em;
 }
 .header__logo a {
-  display: flex;
   align-items: center;
-  transition: all 0.2s eas7;
-}
-.header__logo:hover a {
-  opacity: 0.5;
+  transition: all 0.2s ease;
 }
 
 .logo__text-subtitle {
@@ -888,12 +887,12 @@ p {
   }
 }
 
-.info__logo {
+.info__logo img {
   margin-bottom: 1.25em;
 }
 @media (max-width: 73.75em) {
   .info__logo img {
-    margin: 0 auto;
+    margin: 0 auto 1.25em auto;
   }
 }
 
