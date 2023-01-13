@@ -31,6 +31,11 @@ $(document).ready(function () {
             $(".header__phone").attr("href", "tel:+78314230414")
             $(".header__geo-city").text("Нижний Новгород")
         }
+        else if (youCity === "Ростов-На-Дону") {
+            $('.header__phone span').text('Ростов на дону');
+            $(".header__phone").attr("href", "tel:+78314230414")
+            $(".header__geo-city").text("Ростов")
+        }
         else {
             $('.header__phone span').text('+7 999 100-80-00');
             $(".header__phone").attr("href", "tel:+79991008000")
