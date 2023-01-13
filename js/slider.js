@@ -2,6 +2,7 @@ const documents__slider = new Swiper('.documents__slider', {
     // Optional parameters
     slidesPerView: 2,
     spaceBetween: 20,
+    loop: true,
 
     // Navigation arrows
     navigation: {
@@ -23,7 +24,7 @@ const documents__slider = new Swiper('.documents__slider', {
         // when window width is >= 640px
         950: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 30,
         }
     }
 });
@@ -32,6 +33,7 @@ const team__slider = new Swiper('.team__slider ', {
     // Optional parameters
     slidesPerView: 5,
     spaceBetween: 25,
+    loop: true,
 
     // Navigation arrows
     navigation: {
@@ -62,6 +64,7 @@ const reviews__slider = new Swiper('.reviews__slider ', {
     // Optional parameters
     slidesPerView: 4,
     spaceBetween: 30,
+    loop: true,
 
     // Navigation arrows
     navigation: {

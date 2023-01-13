@@ -24,6 +24,8 @@ $(document).ready(function () {
         }
     };
 
+    $('.lightzoom').lightzoom();
+
     $('.header__burger').on('click', function () {
         location.href = "https://liga.group";
     });
