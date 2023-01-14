@@ -13,7 +13,7 @@ $(document).ready(function () {
             $('.header__phone span').text('+7 3412 77-14-47');
             $(".header__phone").attr("href", "tel:+73412771447")
             $(".header__geo-city").text("Ижевск")
-        } else if (response.region == 'Sverdlovsk oblast') {
+        } else if (response.region == 'Sverdlovsk Oblast') {
             $('.header__phone span').text('+7 343 361-01-04');
             $(".header__phone").attr("href", "tel:+73433610104")
             $(".header__geo-city").text("Екатеринбург")
